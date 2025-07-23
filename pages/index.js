@@ -28,7 +28,7 @@ export default function NeonMoonStudio() {
         <nav className="flex justify-between items-center px-6 py-4 border-b border-purple-800 bg-black/30 backdrop-blur-md sticky top-0 z-20">
         {/* Logo on left */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+          <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
           <span className="text-purple-300 font-bold text-lg">Neon Moon</span>
         </div>
 
