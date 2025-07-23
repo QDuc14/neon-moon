@@ -25,7 +25,15 @@ export default function NeonMoonStudio() {
     <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-indigo-950 text-white font-sans relative overflow-hidden">
       {/* Navigation */}
       <ScrollHeader>
-        <nav className="flex justify-center gap-8 py-4 border-b border-purple-800 bg-black/30 sticky top-0 z-20 backdrop-blur-md">
+        <nav className="flex justify-between items-center px-6 py-4 border-b border-purple-800 bg-black/30 backdrop-blur-md sticky top-0 z-20">
+        {/* Logo on left */}
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+          <span className="text-purple-300 font-bold text-lg">Neon Moon</span>
+        </div>
+
+        {/* Menu items on right */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-6">
           {["Home", "About", "Projects", "Contact"].map((cat) => (
             <a
               key={cat}
@@ -35,7 +43,9 @@ export default function NeonMoonStudio() {
               {cat}
             </a>
           ))}
-        </nav>
+        </div>
+
+      </nav>
       </ScrollHeader>
 
       {/* Hero Section */}
