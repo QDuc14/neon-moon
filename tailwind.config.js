@@ -10,7 +10,7 @@ module.exports = {
         midnight: '#0B0F19',
         primary: '#3B0CA3',
         accent: '#6366F1',
-        glow: '#C084FC',
+        glow: '#fff',
         highlight: '#38BDF8',
         light: '#E0E7FF',
       }
