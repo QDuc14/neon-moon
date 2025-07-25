@@ -7,7 +7,7 @@ export default function Header() {
   const navItems = ["Home", "About", "Projects", "Contact"];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-30 bg-black backdrop-blur-md border-b border-purple-800 text-purple-300">
+    <header className="fixed top-0 left-0 w-full z-30 bg-midnight backdrop-blur-md border-b border-purple-800 text-purple-300">
       <nav className="flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2 hover:scale-105 hover:rotate-1 transition-transform duration-300 ease-out">
@@ -21,7 +21,7 @@ export default function Header() {
             <a
               key={cat}
               href={`#${cat.toLowerCase()}`}
-              className="hover:text-white transition-colors duration-300 font-medium"
+              className="hover:text-highlight text-light transition-colors duration-300 font-medium"
             >
               {cat}
             </a>
@@ -43,7 +43,7 @@ export default function Header() {
 
       {/* Mobile Menu Panel */}
       {menuOpen && (
-        <div className="md:hidden bg-black border-t border-purple-800 flex flex-col items-center gap-4 py-4">
+        <div className="md:hidden bg-midnight border-t border-purple-800 flex flex-col items-center gap-4 py-4">
           {navItems.map((cat) => (
             <a
               key={cat}
