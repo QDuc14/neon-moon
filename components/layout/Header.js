@@ -11,7 +11,8 @@ export default function Header() {
       <nav className="flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2 hover:scale-105 hover:rotate-1 transition-transform duration-300 ease-out">
-          <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
+          {/* <img src="/Logo.png" alt="Logo" className="h-10 w-10" /> */}
+          <img src="/WordLogo.png" alt="WordLogo" className="h-10 w-10"/>
         </div>
 
         {/* Desktop Nav */}
