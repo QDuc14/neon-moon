@@ -1,6 +1,6 @@
 export default function ContactSection() {
   return (
-    <section className="text-center mb-20 px-6" id="contact">
+    <div className="flex flex-col justify-center items-center h-full text-center px-6">
       <h3 className="text-2xl text-purple-300 mb-4">Let’s Create Together</h3>
       <p className="text-purple-400 mb-4">Reach out and tell us about your next vision.</p>
       <a
@@ -9,6 +9,6 @@ export default function ContactSection() {
       >
         Contact Us
       </a>
-    </section>
+    </div>
   );
 }

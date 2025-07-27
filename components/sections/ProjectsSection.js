@@ -3,7 +3,7 @@ import projects from "@/data/projects";
 
 export default function ProjectsSection() {
   return (
-    <section className="px-8 mb-24" id="projects">
+    <div className="flex flex-col justify-center h-full text-center px-8" id="projects">
       <h2 className="text-3xl text-center text-purple-200 font-bold mb-10">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-[160px]">
         {projects.map((project, idx) => (
@@ -17,6 +17,6 @@ export default function ProjectsSection() {
           </Link>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

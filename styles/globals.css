@@ -7,3 +7,12 @@
     text-shadow: 0 0 2px #fff, 0 0 10px #c084fc, 0 0 20px #9333ea;
   }
 }
+
+/* Hide scrollbar visually, but still scrollable */
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}

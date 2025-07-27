@@ -5,11 +5,19 @@ import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-indigo-950 text-white font-sans relative overflow-hidden">
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth pb-16">
+      <section className="h-screen snap-start" id="home">
+        <HeroSection />
+      </section>
+      <section className="h-screen snap-start" id="about">
+        <AboutSection />
+      </section>
+      <section className="h-screen snap-start" id="projects">
+        <ProjectsSection />
+      </section>
+      <section className="h-screen snap-start" id="contact">
+        <ContactSection />
+      </section>
     </div>
   );
 }
