@@ -4,7 +4,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Projects", "Contact"];
+  const leftNav = [
+    { label: 'Home', href: '#home' },
+    { label: 'Blog', href: '#blog' },
+    { label: 'Games', href: '#games' }
+  ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-30 bg-midnight backdrop-blur-md border-b border-purple-800 text-purple-300">
@@ -15,15 +19,11 @@ export default function Header() {
           <img src="/WordLogo.png" alt="WordLogo" className="h-10 w-10"/>
         </div>
 
-        {/* Desktop Nav */}
+        {/* Desktop Nav (anchors) */}
         <div className="hidden md:flex gap-6 absolute left-1/2 transform -translate-x-1/2">
-          {navItems.map((cat) => (
-            <a
-              key={cat}
-              href={`#${cat.toLowerCase()}`}
-              className="hover:text-highlight text-light transition-colors duration-300 font-medium"
-            >
-              {cat}
+          {leftNav.map((n) => (
+            <a key={n.label} href={n.href} className="hover:text-highlight text-light transition-colors duration-300 font-medium">
+              {n.label}
             </a>
           ))}
         </div>
@@ -44,14 +44,14 @@ export default function Header() {
       {/* Mobile Menu Panel */}
       {menuOpen && (
         <div className="md:hidden bg-midnight border-t border-purple-800 flex flex-col items-center gap-4 py-4">
-          {navItems.map((cat) => (
+          {leftNav.map((n) => (
             <a
-              key={cat}
-              href={`#${cat.toLowerCase()}`}
+              key={n.label}
+              href={n.href}
               className="hover:text-white text-purple-300 font-medium transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
-              {cat}
+              {n.label}
             </a>
           ))}
         </div>
