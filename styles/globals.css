@@ -16,3 +16,24 @@ body {
   -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+/* Ensure dark background fills the page */
+html, body, #__next {
+  background-color: #0B0F19; /* matches theme.midnight */
+}
+
+/* Minimal readable styles for blog content */
+.content {
+  color: #E0E7FF;
+}
+.content h1, .content h2, .content h3 {
+  font-weight: 700;
+  color: #E0E7FF;
+  margin-top: 1.25rem;
+}
+.content h2 { font-size: 1.5rem; }
+.content h3 { font-size: 1.25rem; }
+.content p { color: rgba(224,231,255,0.85); line-height: 1.8; margin-top: 0.75rem; }
+.content a { color: #38BDF8; text-decoration: underline; }
+.content ul { list-style: disc; padding-left: 1.25rem; margin-top: 0.5rem; }
+.content li { margin-top: 0.25rem; }
