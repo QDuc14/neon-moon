@@ -5,9 +5,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const leftNav = [
-    { label: 'Home', href: '#home' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Games', href: '#games' }
+    { label: 'Home', href: '/#home' },
+    { label: 'Blog', href: '/#blog' },
+    { label: 'Games', href: '/#games' }
   ];
 
   return (

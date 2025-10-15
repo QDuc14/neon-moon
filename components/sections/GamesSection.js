@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function GamesSection({ games = [] }) {
   const featured = games.slice(0, 3);
   return (
-    <div className="flex flex-col justify-center h-full text-center px-8" id="games">
+    <div className="flex flex-col justify-center h-full text-center px-8">
       <h2 className="text-3xl text-center text-purple-200 font-bold mb-10">Featured Games</h2>
       {!featured.length ? (
         <p className="text-purple-300">No games yet.</p>
@@ -39,7 +39,7 @@ export default function GamesSection({ games = [] }) {
       )}
       <div className="mt-8">
         <Link
-          href="/#"
+          href="/games"
           className="inline-block px-6 py-3 rounded-full border border-purple-500 text-purple-300 hover:bg-purple-800 transition"
         >
           View more
