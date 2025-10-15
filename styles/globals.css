@@ -17,9 +17,20 @@ body {
   scrollbar-width: none;     /* Firefox */
 }
 
-/* Ensure dark background fills the page */
+/* Site-wide background image (with dark overlay for readability) */
 html, body, #__next {
-  background-color: #0B0F19; /* matches theme.midnight */
+  /* Fallback color matches theme.midnight */
+  background-color: #0B0F19;
+  /* Try root image first, then /imgs fallback */
+  background-image:
+    linear-gradient(rgba(11,15,25,0.7), rgba(11,15,25,0.7)),
+    url('/BG.jpg'),
+    url('/imgs/BG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* nice parallax-like effect */
+  min-height: 100%;
 }
 
 /* Minimal readable styles for blog content */
