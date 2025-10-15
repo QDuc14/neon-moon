@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function BlogSection({ posts = [] }) {
   const latest = posts.slice(0, 6);
   return (
-    <div className="flex flex-col justify-center h-full text-center px-8">
+    <div className="flex flex-col justify-center h-full text-center px-8 pb-24 md:pb-0">
       <h2 className="text-3xl text-center text-purple-200 font-bold mb-10">Latest Blog Posts</h2>
       {!latest.length ? (
         <p className="text-purple-300">No posts yet.</p>

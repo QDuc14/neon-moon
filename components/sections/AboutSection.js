@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="mb-6">
           <Image src="/Logo.png" alt="Faction Symbol" width={60} height={60} className="my-2" />
         </div>
-        <h2 className="text-4xl font-bold text-light mb-4">About Us</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-light mb-4">About Us</h2>
         <p className="text-purple-300 mb-4 leading-relaxed">
           We shape stories not just to be told — but to be lived. Our games blend vivid
           aesthetics, deep choice-making, and emotionally charged narratives to immerse players in luminous, alternate realities.

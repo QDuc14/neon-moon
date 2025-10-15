@@ -6,14 +6,14 @@ import games from "@/data/games";
 
 export default function Home({ posts }) {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth pb-16">
-      <section className="h-screen snap-start" id="home">
+    <div className="min-h-[100svh] md:h-screen overflow-y-auto md:overflow-y-scroll md:snap-y md:snap-mandatory scroll-smooth pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-16">
+      <section className="min-h-[100svh] md:h-screen md:snap-start scroll-mt-20 md:scroll-mt-24" id="home">
         <HeroSection />
       </section>
-      <section className="h-screen snap-start" id="blog">
+      <section className="min-h-[100svh] md:h-screen md:snap-start scroll-mt-20 md:scroll-mt-24" id="blog">
         <BlogSection posts={posts} />
       </section>
-      <section className="h-screen snap-start" id="games">
+      <section className="min-h-[100svh] md:h-screen md:snap-start scroll-mt-20 md:scroll-mt-24" id="games">
         <GamesSection games={games} />
       </section>
     </div>
